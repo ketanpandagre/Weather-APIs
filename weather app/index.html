@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ask Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrkWCfhLXMttDCflwVGMJGRvQTcjTwXMpVkkQzVpSXmkPRkRTlcqFlmpLXGZdtwJSPNxRL">E-mail</a></li>
+                  <li><a class="dropdown-item" target="_blank"  href="https://www.linkedin.com/in/ketan-pandagre-865724258/">Linkedin</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/ketanpandagre/?igshid=MzMyNGUyNmU2YQ%3D%3D">Instagram</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="user.html">User Guide</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="container">
+        <h3 class="my-heading">Enter Your City</h3>
+        <form class="d-flex" role="search">
+          <input id="city" class="form-control me-2" type="search" placeholder="Enter City Name" aria-label="Search">
+          <button class="btn btn-outline-success" id="submit" type="submit">Search</button>
+        </form>
+          <h3 class="my-heading">Current Weather</h3>
+          
+          <div class="my-card">
+            <div class="card text-center mb-3" style="width: 30rem;">
+              <div class="card-body">
+                <h5 class="card-title"><span id="cityname">demo</span></h5>
+                <p class="card-text">
+                  <div class="my-text">
+                    Temperature:  <span id="temp"></span>&deg;C
+                  </div>
+               <!--   <div class="my-text">
+                    Max Temperature:  <span id="max_temp"></span>&deg;C
+                  </div>
+                  <div class="my-text">
+                    Min Temperature:  <span id="min_temp"></span>&deg;C
+                  </div>-->
+                  <div class="my-text">
+                    Humidity:  <span id="humidity"></span>
+                  </div>
+                  <div class="my-text">
+                    Feels Like:  <span id="feels_like"></span>
+                  </div>
+                  <div class="my-text">
+                    Wind Speed: <span id="wind_speed"></span>
+                  </div>                  
+                  <div class="my-text">
+                    Wind Degrees: <span id="wind_degrees"></span>
+                  </div>                  
+                  <div class="my-text">
+                    Sunrise: <span id="sunrise"></span>
+                  </div>                  
+                  <div class="my-text">
+                    Sunset: <span id="sunset"></span>
+                  </div>                  
+                  <div class="my-text">
+                    Cloud PCT: <span id="cloud_pct"></span>
+                  </div>                  
+              </div>
+            </div>
+          </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

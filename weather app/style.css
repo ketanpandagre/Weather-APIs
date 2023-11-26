@@ -1,0 +1,48 @@
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.nav-item{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+.dropdown-item{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-outline-success{
+    background-color: black;
+    color: white;
+}
+.btn-outline-success:hover{
+    background-color: #303030;
+    color: white;
+}
+.btn-outline-success:target{
+    background-color: #303030;
+    color: white;
+}
+.my-heading{
+    margin: 30px auto;
+    text-align: center;
+}
+.my-card{
+    display: flex;
+    justify-content: center;
+}
+.card-title{
+    font-size: 1.8rem;
+    font-weight: 900;
+    background-color: #f0efef;
+    border-radius: 4px;
+    padding: 10px;
+}
+.d-flex{
+    width: 80%;
+    margin: 0px auto;
+}
+.my-text{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
